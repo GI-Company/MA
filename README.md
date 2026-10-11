@@ -1,22 +1,31 @@
-# Mountain Automotive & Tire — website redesign concept
+# Mountain Automotive & Tire — independent redesign concept
 
-Independent Global Intent Company website concept. This is not the official business website.
+A five-page, responsive static website concept for Mountain Automotive & Tire, Cleveland, Georgia. **This is not the official business website and is not affiliated with or endorsed by the shop.**
 
-## Files
+## Website structure
 
-- `index.html` — website structure
-- `styles.css` — responsive layout and photography references
-- `script.js` — mobile navigation
+- `index.html` — dedicated homepage with service overview, shop introduction, and contact summary
+- `services.html` — tires, alignments, brakes, oil changes, suspension, and general repair
+- `about.html` — shop background, owner experience, amenities, and location
+- `gallery.html` — original shop photo gallery with meaningful alt text
+- `contact.html` — contact options, business hours, and driving directions
+- `styles.css`, `script.js` — shared responsive styles and mobile navigation
+- `assets/` — original uploaded photographic assets
 
-## Photography
+Navigation uses ordinary relative `.html` links, so each page loads on static hosting without a rewrite framework. Pages include semantic landmarks, descriptive titles and meta descriptions, skip links, `aria-current` in navigation, and accessible image descriptions. The shop's hours are marked up as a description list. The directions and email links use darker text or high-contrast button styling on a white contact card.
 
-The original photos are stored under `assets/` with their source image numbers as filenames. 18 uploaded image files were moved there from the repository root without changing their contents. The hero uses `assets/2843.jpg` (store exterior), and the alignment-services card uses `assets/2835.jpg` (vehicle on a lift), because the originally referenced `2818.jpg` and `2822.jpg` were not included in the upload. All image paths referenced by the site are present.
+## Photo assets
 
+The original shop photos are stored under `assets/` and were organized from user-uploaded images. The hero uses `assets/2843.jpg` and the alignment card uses `assets/2835.jpg`; the original `2818.jpg` and `2822.jpg` were not included in the upload.
 
-## Local preview
+## Preview and deployment
 
-Open `index.html` in a browser. No build step required.
+Open `index.html` locally or deploy the repository to any static site host. No build tools or dependencies required. Every page uses relative links, so serving the project from a subdirectory is supported. If hosting at a public URL, obtain permission for business photographs and verify all listed business details.
 
-## Notes
+## Contact behavior
 
-Before publication, obtain permission to use the shop photographs and verify business details, including warranty terms. Quote requests currently open the visitor's email client.
+Email quote requests open the visitor's email application; no backend form collection is implemented. Directions open Google Maps. Phone buttons use `tel:` links.
+
+## Publication notes
+
+Before making this concept an official website: obtain written permission for the photos and shop identity, confirm warranty terms and current business hours, and get owner approval for the copy.
