@@ -81,3 +81,17 @@
 .contact-card .hours-list>div{flex-wrap:wrap;gap:4px}
 .contact-card .hours-list dd{text-align:left}
 }
+
+/* Business identity and About Us media */
+.nav .brand{min-width:0}
+.brand-logo{width:52px;height:52px;object-fit:contain;flex:none;border-radius:8px;background:#fff;padding:3px}
+.about-owner-feature{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,85px);align-items:center}
+.about-owner-portrait{margin:0;max-width:640px;width:100%}
+.about-owner-portrait img{display:block;width:100%;height:auto;max-height:590px;aspect-ratio:1/1;object-fit:cover;border-radius:6px;background:#e9e9e7;box-shadow:0 16px 42px rgba(12,20,26,.12)}
+.about-owner-copy>p:not(.kicker){color:#384851;font-size:16px;line-height:1.8;max-width:600px}
+.about-logo-panel{display:flex;align-items:center;gap:23px;margin:30px 0;padding:24px;background:#fff;border-left:4px solid #a37b2e;box-shadow:0 2px 12px rgba(12,20,26,.05)}
+.about-logo-panel>img{width:116px;height:116px;flex:none;object-fit:contain;background:#fff;border-radius:5px}
+.about-logo-panel h3{font-size:22px;letter-spacing:-.02em;margin:0 0 8px}
+.about-logo-panel p{font-size:14px;line-height:1.6;color:#4e5b63;margin:0}
+@media(max-width:900px){.about-owner-feature{grid-template-columns:1fr}.about-owner-portrait{max-width:620px}.about-owner-portrait img{max-height:480px}}
+@media(max-width:550px){.brand-logo{width:43px;height:43px}.about-owner-feature{gap:20px}.about-owner-portrait img{max-height:420px}.about-logo-panel{gap:14px;padding:16px}.about-logo-panel>img{width:76px;height:76px}.about-logo-panel h3{font-size:18px}}

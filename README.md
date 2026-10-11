@@ -6,7 +6,7 @@ A five-page, responsive static website concept for Mountain Automotive & Tire, C
 
 - `index.html` — dedicated homepage with service overview, shop introduction, and contact summary
 - `services.html` — tires, alignments, brakes, oil changes, suspension, and general repair
-- `about.html` — shop background, owner experience, amenities, and location
+- `about.html` — About Us page featuring the newly supplied photo and logo, owner experience, shop history, amenities, and location
 - `gallery.html` — original shop photo gallery with meaningful alt text
 - `contact.html` — contact options, business hours, and driving directions
 - `styles.css`, `script.js` — shared responsive styles and mobile navigation
@@ -29,3 +29,7 @@ Email quote requests open the visitor's email application; no backend form colle
 ## Publication notes
 
 Before making this concept an official website: obtain written permission for the photos and shop identity, confirm warranty terms and current business hours, and get owner approval for the copy.
+
+## Brand and About Us imagery
+
+The newly uploaded images were moved to `assets/about-us-photo.webp` and `assets/mountain-automotive-logo.webp` without re-encoding. The About Us page displays both; the navigation on every page also uses the business logo. The former “Our Shop” navigation label is now “About Us” across the site.
