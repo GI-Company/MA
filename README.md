@@ -10,7 +10,8 @@ Independent Global Intent Company website concept. This is not the official busi
 
 ## Photography
 
-The site references the original shop photographs at `assets/2818.jpg`, `assets/2822.jpg`, `assets/2824.jpg`, `assets/2826.jpg`, `assets/2832.jpg`, `assets/2834.jpg`, `assets/2835.jpg`, `assets/2836.jpg`, `assets/2838.jpg`, `assets/2841.jpg`, `assets/2844.jpg`, and `assets/2852.jpg`. These image files must be committed before photographic sections can display.
+The original photos are stored under `assets/` with their source image numbers as filenames. 18 uploaded image files were moved there from the repository root without changing their contents. The hero uses `assets/2843.jpg` (store exterior), and the alignment-services card uses `assets/2835.jpg` (vehicle on a lift), because the originally referenced `2818.jpg` and `2822.jpg` were not included in the upload. All image paths referenced by the site are present.
+
 
 ## Local preview
 
