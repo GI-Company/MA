@@ -7,6 +7,7 @@
   <meta name="description" content="About Mountain Automotive & Tire in Cleveland, Georgia. Meet the people behind the shop, see the business logo, and learn about our services and facilities.">
   <title>About Us | Mountain Automotive &amp; Tire</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
       <img class="brand-logo" src="assets/mountain-automotive-logo.webp" alt="" width="52" height="52" decoding="async">
       <span>MOUNTAIN <small>AUTOMOTIVE &amp; TIRE</small></span>
     </a>
-    <button class="menu" type="button" aria-label="Open navigation" aria-controls="navlinks" aria-expanded="false">☰</button>
+    <button class="menu" type="button" aria-label="Open navigation" aria-controls="navlinks" aria-expanded="false"><span class="menu-label" aria-hidden="true">Menu</span><span class="menu-glyph" aria-hidden="true">☰</span></button>
     <nav id="navlinks" aria-label="Primary navigation">
       <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html" aria-current="page">About Us</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
       <a class="navcall" href="tel:+17064991156">Call 706-499-1156 ↗</a>
@@ -33,9 +34,6 @@
     </section>
 
     <section class="section about-owner-feature" aria-labelledby="meet-owner-heading">
-      <figure class="about-owner-portrait">
-        <img src="assets/about-us-photo.webp" alt="Photograph featured on the Mountain Automotive and Tire About Us page" width="600" height="600" fetchpriority="high">
-      </figure>
       <div class="about-owner-copy">
         <p class="kicker">THE PEOPLE BEHIND THE WORK</p>
         <h2 id="meet-owner-heading">GET TO KNOW<br>OUR SHOP.</h2>
@@ -49,15 +47,17 @@
         <p>Owner Tanner Pirkle has more than 15 years of mechanical experience. At Mountain Automotive &amp; Tire, the focus is on providing practical, professional service and clear communication for local drivers.</p>
         <a href="contact.html" class="section-link">Contact the shop <span aria-hidden="true">↗</span></a>
       </div>
-    </section>
+      <figure class="about-owner-portrait">
+        <img src="assets/about-us-photo.webp" alt="Photograph featured on the Mountain Automotive and Tire About Us page" width="600" height="600" fetchpriority="high">
+      </figure></section>
     <section class="split page-split" aria-labelledby="our-story-heading">
-      <div class="split-image" aria-hidden="true"></div>
       <div class="split-content">
         <p class="kicker">OUR STORY</p><h2 id="our-story-heading">BUILT ON<br>EXPERIENCE.</h2>
         <p>Owner Tanner Pirkle brings more than 15 years of mechanical experience to Mountain Automotive &amp; Tire. The business originally opened in Cornelia, Georgia in April 2023 and moved to Cleveland in September 2024.</p>
         <p>Today, the shop operates eight service bays at 3112 U.S. 129, helping drivers with tire service, maintenance, alignments, brakes, and general repairs.</p>
         <a class="textlink" href="contact.html">Contact the shop ↗</a>
       </div>
+      <div class="split-image" aria-hidden="true"></div>
     </section>
     <section class="comfort" aria-labelledby="waiting-heading">
       <div><p class="kicker">WHILE YOU WAIT</p><h2 id="waiting-heading">MAKE YOURSELF<br>AT HOME.</h2><p>For customers waiting on service, the shop provides seating, Wi-Fi, coffee, water, and refreshments.</p><a class="section-link" href="gallery.html">Explore the shop gallery ↗</a></div>
