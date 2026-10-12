@@ -56,3 +56,18 @@ Use `SEMANTIC_STANDARDS.md` as the required baseline before launching every GIC 
 - **Growth $1,000 one-time:** Up to 7 pages, analytics/contact setup and three months of light management included. After the included period management is optional at $125/month, not automatically billed.
 
 Domain, hosting, third-party fees, added pages and expanded SEO are separately scoped and quoted. Prices refer to stated package scopes rather than invented prior prices. 
+
+## Stripe-hosted payment setup (October 2026)
+
+GIC Designs uses the existing **live Global Intent Company Stripe account** for web-design purchases. The `pricing.html` page links directly to Stripe-hosted standard Payments checkout; no card information is processed or stored by this static website. Customers must agree with GIC in writing on scope, delivery, content requirements and terms before paying.
+
+| Product | Price | Live checkout |
+| --- | --- | --- |
+| Starter — 3 pages | $499 one-time | https://buy.stripe.com/28EfZ90S9c1cclQgck1sQ03 |
+| Business — 5 pages | $750 one-time | https://buy.stripe.com/9B6dR130hc1cclQ3py1sQ04 |
+| Growth — up to 7 pages + 3 months of light management | $1,000 one-time | https://buy.stripe.com/9B6eV5fN39T40D8f8g1sQ05 |
+| Optional management (separate customer opt-in only) | $125 per month | https://buy.stripe.com/00w4gr30h3uG85A4tC1sQ06 |
+
+Management is **not** added to any one-time checkout and must be separately authorized after agreeing to a scope. Each payment link has `managed_payments.enabled=false` to avoid the earlier Managed Payments incompatibility with web-design services. Automatic tax is disabled pending appropriate tax classification and setup: review any tax collection obligations before accepting payment. One-time packages are configured to generate post-purchase invoices in Stripe.
+
+**Deployment check:** The source branch may deploy to an earlier Vercel project. Confirm that the production GIC Designs project `gicdesigns` serving `gicdesigns-one.vercel.app` is linked to this repository's `main` and verify the live price/checkout anchors; a Git commit by itself does not establish a production deployment.

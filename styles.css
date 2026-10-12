@@ -125,6 +125,12 @@ h1 em,h2 em{font-style:normal;color:var(--brand)}
 .block{width:100%}
 .care-strip{margin-top:30px}
 .pricing-notice{color:#6a7680;font-size:12px;line-height:1.8;margin-top:25px}
+.checkout-actions{display:grid;gap:10px;margin-top:auto}
+.checkout-actions .button{width:100%}
+.checkout-helper{font-size:11px;line-height:1.55;color:#647988;margin:3px 0 0;min-height:0!important}
+.checkout-instructions{margin-top:26px;padding:25px 30px;border:1px solid #d5e5ee;border-radius:12px;background:#f3f8fc}
+.checkout-instructions h2{font-size:22px;line-height:1.35;margin:0 0 10px}
+.checkout-instructions p{font-size:13px;line-height:1.75;color:#536779;margin:0;max-width:850px}
 .contact-layout{display:grid;grid-template-columns:.83fr 1.17fr;gap:70px}
 .contact-intro h2{font-size:39px;margin:9px 0 22px}
 .contact-intro>p:not(.eyebrow){color:var(--dim);line-height:1.8}
