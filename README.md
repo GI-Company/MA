@@ -1,43 +1,50 @@
-# GIC Website Studio — Local Business Showcase
+# GIC Website Studio — Semantic Business Website Showcase
 
-This repository's `main` branch is the GIC Website Studio: a reusable, mobile-friendly portfolio of four **working fictional business websites**. It is designed to pitch website design and customization to local businesses without borrowing the identities, photos, or trademarks of actual prospects.
+This repository's `main` branch is the GIC Website Studio: a reusable, mobile-friendly showcase of four **five-page fictional business websites**. The concepts demonstrate meaningful HTML5 structure, accessible controls and separate page URLs instead of a long single-screen pitch.
 
-## Important: Archived Mountain Automotive demo
+## Preserved Mountain Automotive demo
 
-The previous personalized Mountain Automotive & Tire website, its HTML/CSS/JavaScript, logo, and original photographs are **preserved on the separate branch** [archive/mountain-automotive](https://github.com/GI-Company/MA/tree/archive/mountain-automotive). That branch restores all 20 original media files. This main branch intentionally contains no Mountain Automotive business material. Please don't delete the archive branch.
+The previous personalized Mountain Automotive & Tire website, HTML/CSS/JavaScript, logo and all 20 original images remain preserved under [archive/mountain-automotive](https://github.com/GI-Company/MA/tree/archive/mountain-automotive). The main branch contains no Mountain Automotive client branding or media. **Do not delete the archive branch.**
 
-## Showcase structure
+## GIC portfolio
 
-- `index.html`: Landing page with live template previews and GIC studio introduction.
-- `templates.html`: Four working template cards.
-- `industries.html`: Industry-specific portfolio with previews.
-- `pricing.html`: Sample one-time packages and optional ongoing management.
-- `contact.html`: Functional mailto inquiry form (uses the visitor's mail app; no server submission).
-- `demos/automotive.html`: **Peak Auto & Tire**, industrial automotive concept.
-- `demos/landscaping.html`: **Blue Ridge Lawn Co.**, inviting lawn-care concept.
-- `demos/pressure-washing.html`: **ClearLine Exterior Care**, exterior-cleaning concept.
-- `demos/cafe.html`: **Juniper & Oak Coffee**, editorial café concept.
-- `styles.css`: Studio design system.
-- `demos/demo.css`: Template-specific layouts and theme variants.
-- `script.js`: Accessible mobile menus and mailto inquiry helper.
-- `IMAGE_CREDITS.md`: Verified source photos, attribution and license notes.
+- `index.html` — Studio landing page.
+- `templates.html` — Working template portfolio.
+- `industries.html` — Industry examples.
+- `pricing.html` — Illustrative package pricing.
+- `contact.html` — GIC inquiry composer (opens email application).
 
-The four demonstration businesses are fictional. Demo pages are marked `noindex,nofollow`, display obvious fictional-business notices, and link back to the GIC studio.
+## Four complete five-page websites
 
-## Local preview
+Each demo has distinct semantic pages:
 
-Open `index.html` in a browser or host the static directory on Vercel / any other static web host. Navigation uses relative file paths; no build step, JavaScript framework, backend, API keys or npm dependencies. Photo URLs currently load from images.unsplash.com and require an Internet connection.
+| Template | Home | Services | About | Gallery | Contact |
+|---|---|---|---|---|---|
+| Peak Auto & Tire | [Home](demos/automotive.html) | [Services](demos/automotive-services.html) | [About](demos/automotive-about.html) | [Gallery](demos/automotive-gallery.html) | [Contact](demos/automotive-contact.html) |
+| Blue Ridge Lawn Co. | [Home](demos/landscaping.html) | [Services](demos/landscaping-services.html) | [About](demos/landscaping-about.html) | [Gallery](demos/landscaping-gallery.html) | [Contact](demos/landscaping-contact.html) |
+| ClearLine Exterior Care | [Home](demos/pressure-washing.html) | [Services](demos/pressure-washing-services.html) | [About](demos/pressure-washing-about.html) | [Gallery](demos/pressure-washing-gallery.html) | [Contact](demos/pressure-washing-contact.html) |
+| Juniper & Oak Coffee | [Home](demos/cafe.html) | [Services](demos/cafe-services.html) | [About](demos/cafe-about.html) | [Gallery](demos/cafe-gallery.html) | [Contact](demos/cafe-contact.html) |
 
-## Customize
+The original home URL for each demo is preserved. Other pages use the same `demos/` directory with `-services`, `-about`, `-gallery`, and `-contact` suffixes.
 
-Replace demo branding, claims, and image URLs only with approved client assets and verified business details. Remove the fictional-business disclaimer only after the resulting site is authorized by the real owner.
+- `demos/demo.css` — Shared responsive style system and differentiated theme variants.
+- `demos/demo.js` — Dedicated accessible mobile navigation and transparent email inquiry flow.
+- `SEMANTIC_STANDARDS.md` — Mandatory semantic, mobile and accessibility checks for all future GIC development.
+- `IMAGE_CREDITS.md` — Source photo URLs and licensing notes.
+- `styles.css` / `script.js` — Studio site assets (separate from demo-specific assets).
 
-## Contact and pricing
+All fictional sites have a visible disclaimer, `noindex,nofollow` metadata, distinct titles/descriptions, unique H1 per page, skip link, header/navigation/main/footer landmarks, clear heading hierarchy, breadcrumb navigation on interior pages, accessible images, semantic service articles and figure-based galleries. Mobile DOM reading order places meaningful content before supporting images.
 
-GIC contact: cory.tortorici@globalintentcompany.space. The contact form opens a draft email via `mailto:` with the visitor's chosen template and project details; it does not collect or persist personal data on the server.
+## Preview and deployment
 
-Pricing is illustrative, subject to a written quote. No search-engine position, lead count or business outcome is guaranteed.
+Static HTML, CSS and vanilla JavaScript. Serve the repository directory on any standard static web host (Vercel or local `python3 -m http.server`). No build scripts or framework dependencies. Internet connectivity is needed for the linked Unsplash image assets and optional Google Fonts.
 
-## Deployment warning
+**Important:** This repository may still be connected to the old `mountinautomotivetire.vercel.app` Vercel project. The user plans to discontinue that URL. Connect to an appropriate GIC-branded deployment before marketing the studio.
 
-This GitHub repo was previously connected to a Vercel project with the **Mountain Automotive demo URL**. If that integration still exists, pushes to `main` may deploy the generic studio to the old project. Migrate or disconnect the old Vercel project and use a suitable new GIC-branded domain before advertising the showcase.
+## Inquiry behavior
+
+Studio and demo forms create an email draft in the visitor's configured email application and do **not** transmit messages to a server. No private personal data is stored here. Replace with a privacy-conscious authenticated backend if a future client needs direct form submissions.
+
+## Client handoff
+
+Use `SEMANTIC_STANDARDS.md` as the required baseline before launching every GIC client site. Verify business identities, claims, and contact details before publishing. Sample packages are estimates only and require an agreed scope. No search ranking or other marketing outcome is guaranteed.
