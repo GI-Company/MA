@@ -21,6 +21,11 @@ h1,h2,h3{text-wrap:balance}
 .demo-ribbon{min-height:44px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:9px clamp(18px,5vw,70px);background:#112334;color:#f5f9fb;font-size:11px;line-height:1.45;letter-spacing:.035em}
 .demo-ribbon p{margin:0}.demo-ribbon strong{color:#f2d58b}
 .demo-ribbon a{text-decoration:underline;text-underline-offset:3px}
+.demo-ribbon-links{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:9px 18px}
+.demo-ribbon .studio-return{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:9px 13px;border-radius:4px;background:#f2d58b;color:#102334;font-weight:900;text-decoration:none;line-height:1.25}
+.demo-ribbon .studio-return:hover,.demo-ribbon .studio-return:focus-visible{background:#fff2c9;text-decoration:underline;text-underline-offset:3px}
+.demo-ribbon-links a:not(.studio-return){display:inline-flex;align-items:center;min-height:38px}
+
 .demo-header{position:sticky;top:0;z-index:40;background:var(--surface);border-bottom:1px solid #15273426}
 .demo-top{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:82px;padding:13px clamp(18px,5vw,70px);max-width:1600px;margin-inline:auto}
 .demo-brand{display:inline-flex;align-items:center;gap:12px;min-width:0;font:850 clamp(18px,2.2vw,26px)/1.1 'Manrope',sans-serif;letter-spacing:-.05em}
@@ -33,6 +38,9 @@ h1,h2,h3{text-wrap:balance}
 #demo-nav a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;font-weight:800;line-height:1.35}
 #demo-nav a[aria-current=page]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
 #demo-nav a:hover{text-decoration:underline;text-underline-offset:6px}
+#demo-nav .demo-studio-link{color:var(--ink);border:1px solid #758d99;padding:10px 12px;border-radius:4px;white-space:nowrap;text-align:center;justify-content:center}
+#demo-nav .demo-studio-link:hover,#demo-nav .demo-studio-link:focus-visible{background:#dce8ef}
+
 #demo-nav .demo-nav-action{display:inline-flex;padding:12px 17px;gap:7px;justify-content:center;text-align:center;border-radius:4px;background:var(--deep);color:#fff}
 .demo-menu{display:none}
 .demo-kicker{margin-bottom:14px;color:var(--accent);font-size:11px;font-weight:900;letter-spacing:.15em;line-height:1.6;text-transform:uppercase}
@@ -173,6 +181,11 @@ h1,h2,h3{text-wrap:balance}
  .contact-layout{gap:30px}
 }
 @media(max-width:560px){
+ .demo-ribbon{align-items:stretch}
+ .demo-ribbon-links{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:5px 12px}
+ .demo-ribbon .studio-return{grid-column:1/-1;min-height:45px;font-size:12px}
+ .demo-ribbon-links a:not(.studio-return){font-size:10px;justify-content:center;text-align:center}
+
  .demo-ribbon{padding:9px 17px;font-size:10px}
  .demo-top{padding-inline:16px;gap:12px}
  .demo-brand{font-size:clamp(15px,4vw,19px);gap:8px}
