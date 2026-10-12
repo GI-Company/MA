@@ -12,7 +12,10 @@ export default function RevealOnScroll() {
       ".site-page .tip-panel", ".site-page .care-strip", ".site-page .contact-layout",
       ".site-page .demo-card", ".site-page .demo-feature", ".site-page .demo-section",
       ".site-page .demo-grid > *", ".site-page .demo-gallery > *",
-      ".site-page .demo-testimonial"
+      ".site-page .demo-testimonial",
+      ".site-page .home-focus", ".site-page .home-path-steps li",
+      ".site-page .template-mood-links a", ".site-page .template-coverage li",
+      ".site-page .sector-card", ".site-page .industry-principle-list article"
     ].join(",");
     const items = Array.from(document.querySelectorAll<HTMLElement>(selectors));
     const observer = new IntersectionObserver((entries) => {
