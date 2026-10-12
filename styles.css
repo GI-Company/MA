@@ -224,3 +224,14 @@ h1 em,h2 em{font-style:normal;color:var(--brand)}
  .footer-grid>div:first-child{grid-column:auto}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.template-image img{transition:none}}
+
+/* Accessible studio-wide launch offer band */
+.launch-offer{background:#e9f3fa;border-block:1px solid #cbdfea}
+.launch-offer-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;padding-block:37px}
+.launch-offer .eyebrow{margin-bottom:7px}
+.launch-offer h2{font-size:clamp(24px,3vw,36px);line-height:1.2;margin:0 0 11px}
+.launch-offer h2 strong{color:#175e9a;font-weight:900}
+.launch-offer p:not(.eyebrow){max-width:710px;color:#496479;font-size:14px;line-height:1.65;margin:0}
+.launch-offer .button{flex-shrink:0}
+@media(max-width:760px){.launch-offer-inner{display:grid;grid-template-columns:minmax(0,1fr);padding-block:32px;gap:18px}.launch-offer .button{justify-self:start}}
+@media(max-width:480px){.launch-offer .button{width:100%}}

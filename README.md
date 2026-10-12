@@ -11,7 +11,7 @@ The previous personalized Mountain Automotive & Tire website, HTML/CSS/JavaScrip
 - `index.html` — Studio landing page.
 - `templates.html` — Working template portfolio.
 - `industries.html` — Industry examples.
-- `pricing.html` — Illustrative package pricing.
+- `pricing.html` — GIC introductory package pricing ($499 Starter, $750 Business, $1,000 Growth).
 - `contact.html` — GIC inquiry composer (opens email application).
 
 ## Four complete five-page websites
@@ -48,3 +48,11 @@ Studio and demo forms create an email draft in the visitor's configured email ap
 ## Client handoff
 
 Use `SEMANTIC_STANDARDS.md` as the required baseline before launching every GIC client site. Verify business identities, claims, and contact details before publishing. Sample packages are estimates only and require an agreed scope. No search ranking or other marketing outcome is guaranteed.
+
+## October 2026 local business launch offer
+
+- **Starter $499 one-time:** 3 dedicated pages, semantic/responsive markup and foundational metadata.
+- **Business $750 one-time:** 5 dedicated pages, customized imagery/branding and verified local business structured data when appropriate.
+- **Growth $1,000 one-time:** Up to 7 pages, analytics/contact setup and three months of light management included. After the included period management is optional at $125/month, not automatically billed.
+
+Domain, hosting, third-party fees, added pages and expanded SEO are separately scoped and quoted. Prices refer to stated package scopes rather than invented prior prices. 
