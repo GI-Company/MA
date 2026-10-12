@@ -1,35 +1,43 @@
-# Mountain Automotive & Tire — independent redesign concept
+# GIC Website Studio — Local Business Showcase
 
-A five-page, responsive static website concept for Mountain Automotive & Tire, Cleveland, Georgia. **This is not the official business website and is not affiliated with or endorsed by the shop.**
+This repository's `main` branch is the GIC Website Studio: a reusable, mobile-friendly portfolio of four **working fictional business websites**. It is designed to pitch website design and customization to local businesses without borrowing the identities, photos, or trademarks of actual prospects.
 
-## Website structure
+## Important: Archived Mountain Automotive demo
 
-- `index.html` — dedicated homepage with service overview, shop introduction, and contact summary
-- `services.html` — tires, alignments, brakes, oil changes, suspension, and general repair
-- `about.html` — About Us page featuring the newly supplied photo and logo, owner experience, shop history, amenities, and location
-- `gallery.html` — original shop photo gallery with meaningful alt text
-- `contact.html` — contact options, business hours, and driving directions
-- `styles.css`, `script.js` — shared responsive styles and mobile navigation
-- `assets/` — original uploaded photographic assets
+The previous personalized Mountain Automotive & Tire website, its HTML/CSS/JavaScript, logo, and original photographs are **preserved on the separate branch** [archive/mountain-automotive](https://github.com/GI-Company/MA/tree/archive/mountain-automotive). That branch restores all 20 original media files. This main branch intentionally contains no Mountain Automotive business material. Please don't delete the archive branch.
 
-Navigation uses ordinary relative `.html` links, so each page loads on static hosting without a rewrite framework. Pages include semantic landmarks, descriptive titles and meta descriptions, skip links, `aria-current` in navigation, and accessible image descriptions. The shop's hours are marked up as a description list. The directions and email links use darker text or high-contrast button styling on a white contact card.
+## Showcase structure
 
-## Photo assets
+- `index.html`: Landing page with live template previews and GIC studio introduction.
+- `templates.html`: Four working template cards.
+- `industries.html`: Industry-specific portfolio with previews.
+- `pricing.html`: Sample one-time packages and optional ongoing management.
+- `contact.html`: Functional mailto inquiry form (uses the visitor's mail app; no server submission).
+- `demos/automotive.html`: **Peak Auto & Tire**, industrial automotive concept.
+- `demos/landscaping.html`: **Blue Ridge Lawn Co.**, inviting lawn-care concept.
+- `demos/pressure-washing.html`: **ClearLine Exterior Care**, exterior-cleaning concept.
+- `demos/cafe.html`: **Juniper & Oak Coffee**, editorial café concept.
+- `styles.css`: Studio design system.
+- `demos/demo.css`: Template-specific layouts and theme variants.
+- `script.js`: Accessible mobile menus and mailto inquiry helper.
+- `IMAGE_CREDITS.md`: Verified source photos, attribution and license notes.
 
-The original shop photos are stored under `assets/` and were organized from user-uploaded images. The hero uses `assets/2843.jpg` and the alignment card uses `assets/2835.jpg`; the original `2818.jpg` and `2822.jpg` were not included in the upload.
+The four demonstration businesses are fictional. Demo pages are marked `noindex,nofollow`, display obvious fictional-business notices, and link back to the GIC studio.
 
-## Preview and deployment
+## Local preview
 
-Open `index.html` locally or deploy the repository to any static site host. No build tools or dependencies required. Every page uses relative links, so serving the project from a subdirectory is supported. If hosting at a public URL, obtain permission for business photographs and verify all listed business details.
+Open `index.html` in a browser or host the static directory on Vercel / any other static web host. Navigation uses relative file paths; no build step, JavaScript framework, backend, API keys or npm dependencies. Photo URLs currently load from images.unsplash.com and require an Internet connection.
 
-## Contact behavior
+## Customize
 
-Email quote requests open the visitor's email application; no backend form collection is implemented. Directions open Google Maps. Phone buttons use `tel:` links.
+Replace demo branding, claims, and image URLs only with approved client assets and verified business details. Remove the fictional-business disclaimer only after the resulting site is authorized by the real owner.
 
-## Publication notes
+## Contact and pricing
 
-Before making this concept an official website: obtain written permission for the photos and shop identity, confirm warranty terms and current business hours, and get owner approval for the copy.
+GIC contact: cory.tortorici@globalintentcompany.space. The contact form opens a draft email via `mailto:` with the visitor's chosen template and project details; it does not collect or persist personal data on the server.
 
-## Brand and About Us imagery
+Pricing is illustrative, subject to a written quote. No search-engine position, lead count or business outcome is guaranteed.
 
-The newly uploaded images were moved to `assets/about-us-photo.webp` and `assets/mountain-automotive-logo.webp` without re-encoding. The About Us page displays both; the navigation on every page also uses the business logo. The former “Our Shop” navigation label is now “About Us” across the site.
+## Deployment warning
+
+This GitHub repo was previously connected to a Vercel project with the **Mountain Automotive demo URL**. If that integration still exists, pushes to `main` may deploy the generic studio to the old project. Migrate or disconnect the old Vercel project and use a suitable new GIC-branded domain before advertising the showcase.
