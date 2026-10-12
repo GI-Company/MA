@@ -80,3 +80,8 @@ Source now runs **Next.js + TypeScript**, with all 25 existing semantic pages ma
 Primary domain: **https://www.gicdesigns.space**. Vercel Web Analytics is instrumented through `@vercel/analytics/next`; enable Analytics in the Vercel Dashboard, then deploy. `RevealOnScroll` adds gentle fade-in/fade-out scroll transitions, with reduced-motion and no-JS fallbacks. Studio and individual demo CSS and scripts are preserved in `public/`, including four separate color themes, mobile menu controls, and transparent mailto inquiry forms. Stripe-hosted $499, $750, and $1,000 checkout links are untouched; monthly management remains a separate opt-in.
 
 Install with `npm install`; test with `npm run build`. Deploy `main` as a Next.js project in Vercel, then verify `/templates`, `/pricing` and each demo, old URL redirects, mobile menu, and Stripe checkout. The repository update alone does not prove that Vercel production has finished deploying.
+
+
+## Page differentiation update — October 2026
+
+Home is now a focused business-value landing page with an overview, three website principles and a simple project process; it no longer repeats all four demo cards. Templates is the single location for browsing and comparing the four live five-page demos, with style jump navigation. Industries is an industry-needs matrix covering eight sectors and appropriate customer paths; it no longer duplicates the demo-gallery images or descriptions. The shared accessible navigation, HTML landmarks, Next.js routing, Stripe pricing and demo routes are unchanged. Responsive page-specific CSS is mirrored between styles.css and public/studio.css.
