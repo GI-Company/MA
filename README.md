@@ -71,3 +71,12 @@ GIC Designs uses the existing **live Global Intent Company Stripe account** for 
 Management is **not** added to any one-time checkout and must be separately authorized after agreeing to a scope. Each payment link has `managed_payments.enabled=false` to avoid the earlier Managed Payments incompatibility with web-design services. Automatic tax is disabled pending appropriate tax classification and setup: review any tax collection obligations before accepting payment. One-time packages are configured to generate post-purchase invoices in Stripe.
 
 **Deployment check:** The source branch may deploy to an earlier Vercel project. Confirm that the production GIC Designs project `gicdesigns` serving `gicdesigns-one.vercel.app` is linked to this repository's `main` and verify the live price/checkout anchors; a Git commit by itself does not establish a production deployment.
+
+
+## Next.js App Router rollout — October 2026
+
+Source now runs **Next.js + TypeScript**, with all 25 existing semantic pages mapped to clean routes in `lib/site.ts`. The original `.html` files remain as version-controlled content templates, rendered inside trusted React Server Components; do not delete until replaced with native TSX. `next.config.mjs` permanently redirects every old `.html` page to its clean URL. All internal navigation links (including query strings) are normalized at render time.
+
+Primary domain: **https://www.gicdesigns.space**. Vercel Web Analytics is instrumented through `@vercel/analytics/next`; enable Analytics in the Vercel Dashboard, then deploy. `RevealOnScroll` adds gentle fade-in/fade-out scroll transitions, with reduced-motion and no-JS fallbacks. Studio and individual demo CSS and scripts are preserved in `public/`, including four separate color themes, mobile menu controls, and transparent mailto inquiry forms. Stripe-hosted $499, $750, and $1,000 checkout links are untouched; monthly management remains a separate opt-in.
+
+Install with `npm install`; test with `npm run build`. Deploy `main` as a Next.js project in Vercel, then verify `/templates`, `/pricing` and each demo, old URL redirects, mobile menu, and Stripe checkout. The repository update alone does not prove that Vercel production has finished deploying.
