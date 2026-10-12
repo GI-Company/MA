@@ -330,3 +330,23 @@ h1 em,h2 em{font-style:normal;color:var(--brand)}
 @media(max-width:1050px){.home-focus-grid{gap:12px}.home-focus{padding:28px 22px}.home-focus p{min-height:0}.template-intro-layout{grid-template-columns:1fr 180px;gap:25px}.template-mood-links{grid-template-columns:repeat(2,minmax(0,1fr))}.sector-card p{grid-template-columns:1fr;gap:2px}}
 @media(max-width:760px){.home-proof{grid-template-columns:1fr}.home-proof p,.home-proof p+p{padding:12px 0;border:0;border-bottom:1px solid var(--line)}.home-focus-grid,.home-path-layout,.template-intro-layout,.template-coverage-inner,.industry-hero-layout,.industry-principles-inner{grid-template-columns:1fr;gap:30px}.home-path-layout,.industry-hero-layout{padding-block:65px}.home-final,.template-next,.industry-next,.template-library-heading,.sector-header{display:block}.home-final .button,.template-next .button,.industry-next-actions{margin-top:18px}.template-intro-layout{padding-block:65px}.template-intro-stat{display:grid;grid-template-columns:1fr 2fr;gap:10px;align-items:center}.template-intro-rule{grid-column:1/-1;margin:6px 0}.template-mood-links,.sector-grid{grid-template-columns:1fr}.template-coverage ol{grid-template-columns:repeat(3,minmax(0,1fr))}.industry-principle-list{grid-template-columns:1fr}.industry-principles-inner{padding-block:60px}.sector-card p{grid-template-columns:110px 1fr}}
 @media(max-width:480px){.template-mood-links{grid-template-columns:1fr}.template-coverage ol{grid-template-columns:repeat(2,minmax(0,1fr))}.sector-card{padding:26px 21px}.sector-card p{grid-template-columns:1fr}.home-path-actions,.industry-next-actions{display:grid;grid-template-columns:1fr}.home-path-actions .button,.industry-next-actions .button,.home-final .button,.template-next .button{width:100%}.template-intro-stat strong{font-size:50px}.home-focus h3{margin-top:24px}}
+
+
+/* The expanded portfolio previews carry each demo's distinctive identity. */
+.template-card--salon{background:#faf1ed;border-color:#e5c9c9}
+.template-card--salon .template-body h3{font-family:Georgia,serif;letter-spacing:-.045em;font-weight:500}
+.template-card--salon .image-tip{background:#6f5260}
+.template-card--contractor{background:#f6f5e9;border-color:#b6bbae}
+.template-card--contractor .template-body h3{text-transform:uppercase;font-weight:900;letter-spacing:-.075em}
+.template-card--contractor .image-tip{background:#e6b83c;color:#182129;border-color:#e6b83c}
+.template-card--lodge{background:#eaf0e7;border-color:#b4c8b4}
+.template-card--lodge .template-body h3{font-family:Georgia,serif;font-weight:500}
+.template-card--lodge .image-tip{background:#254b35}
+.template-card--retail{background:#f5e9ff;border:2px solid #5f4bc4}
+.template-card--retail .template-body h3{font-weight:900;letter-spacing:-.08em;text-transform:uppercase}
+.template-card--retail .image-tip{background:#faee59;color:#29206f;border:1px solid #3520a0}
+.template-card--retail .template-image img{filter:saturate(1.2)}
+.template-card--salon .template-image img{filter:saturate(.72)}
+.template-card--contractor .template-image img{filter:contrast(1.15)}
+.template-card--lodge .template-image img{filter:saturate(.85)}
+@media(max-width:760px){.template-card--retail{border-width:1px}}

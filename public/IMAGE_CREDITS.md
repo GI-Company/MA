@@ -16,3 +16,16 @@ The image files are requested directly from images.unsplash.com at the sizes sho
 | Café | Detail | Aleksey Cherenkevich | https://unsplash.com/photos/barista-making-coffee-with-an-espresso-machine-bP6ZQBT5FSo | https://images.unsplash.com/photo-1761078658899-4414727332e3?auto=format&fit=crop&w=1200&q=80 |
 
 Images and fictional brands are illustrative; no actual business, workplace, people or work shown in photos should be construed as endorsing these mock companies or Global Intent Company. The demo pages have `noindex,nofollow` directives so that fictional identities don't compete with genuine local businesses in search results.
+
+## Four new fictional concepts (2026-10-11)
+
+These new portfolio demos use remote Unsplash image CDN identifiers. The images are illustrative, not real client work, locations, products, or venues. Photographer attribution has not been independently validated for the additional assets below; review their original listings and rights before any customer handoff or redistribution. The individual demo pages are noindex/nofollow.
+
+| Concept | Illustrative image CDN IDs |
+| --- | --- |
+| Morrow & Muse (salon) | photo-1560066984-138dadb4c035, photo-1521590832167-7bcbfaa6381f, photo-1595476108010-b4d1f102b1b1, photo-1487412947147-5cebf100ffc2 |
+| Forge & Field (contractor) | photo-1503387762-592deb58ef4e, photo-1600585154340-be6161a56a0c, photo-1487958449943-2429e8be8625, photo-1600607687920-4e2a09cf159d |
+| Fernlight Retreat (lodging) | photo-1510798831971-661eb04b3739, photo-1470770841072-f978cf4d019e, photo-1449158743715-0a90ebb6d2d8, photo-1484154218962-a197022b5858 |
+| Good Form Objects (retail) | photo-1441986300917-64674bd600d8, photo-1490481651871-ab68de25d43d, photo-1483985988355-763728e1935b, photo-1549298916-b41d501d3772 |
+
+Image URL pattern: `https://images.unsplash.com/{photo-id}?auto=format&fit=crop&w=1300&q=82`. Verify image load and relevance during live QA.

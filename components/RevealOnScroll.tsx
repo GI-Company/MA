@@ -15,7 +15,9 @@ export default function RevealOnScroll() {
       ".site-page .demo-testimonial",
       ".site-page .home-focus", ".site-page .home-path-steps li",
       ".site-page .template-mood-links a", ".site-page .template-coverage li",
-      ".site-page .sector-card", ".site-page .industry-principle-list article"
+      ".site-page .sector-card", ".site-page .industry-principle-list article",
+      ".site-page .concept-feature", ".site-page .concept-service-card",
+      ".site-page .concept-gallery-photo", ".site-page .concept-values article"
     ].join(",");
     const items = Array.from(document.querySelectorAll<HTMLElement>(selectors));
     const observer = new IntersectionObserver((entries) => {

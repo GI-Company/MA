@@ -1,6 +1,6 @@
 # GIC Website Studio — Semantic Business Website Showcase
 
-This repository's `main` branch is the GIC Website Studio: a reusable, mobile-friendly showcase of four **five-page fictional business websites**. The concepts demonstrate meaningful HTML5 structure, accessible controls and separate page URLs instead of a long single-screen pitch.
+This repository's `main` branch is the GIC Website Studio: a reusable, mobile-friendly showcase of eight **five-page fictional business websites**. The concepts demonstrate meaningful HTML5 structure, accessible controls and separate page URLs instead of a long single-screen pitch.
 
 ## Preserved Mountain Automotive demo
 
@@ -85,3 +85,9 @@ Install with `npm install`; test with `npm run build`. Deploy `main` as a Next.j
 ## Page differentiation update — October 2026
 
 Home is now a focused business-value landing page with an overview, three website principles and a simple project process; it no longer repeats all four demo cards. Templates is the single location for browsing and comparing the four live five-page demos, with style jump navigation. Industries is an industry-needs matrix covering eight sectors and appropriate customer paths; it no longer duplicates the demo-gallery images or descriptions. The shared accessible navigation, HTML landmarks, Next.js routing, Stripe pricing and demo routes are unchanged. Responsive page-specific CSS is mirrored between styles.css and public/studio.css.
+
+## October 2026 portfolio expansion
+
+New complete five-page demo concepts: **Morrow & Muse (salon)**, **Forge & Field (contractor)**, **Fernlight Retreat (lodging)**, and **Good Form Objects (retail)**. Each has Home, Services, About, Gallery and Contact pages, with differentiated page structures, mobile navigation, accessible landmarks and honest email-based inquiry. Styling is scoped to the `concept--*` classes in `public/concept.css` and `demos/concept.css`. Existing four demos remain untouched.
+
+The Next.js route map and legacy .html redirects include all 45 public routes (5 studio + 40 demo). The studio Templates index has eight cards and industry-specific links. Stripe-hosted checkout links and separate optional management remain on the unchanged pricing page.

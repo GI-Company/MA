@@ -24,7 +24,27 @@ const originalRoutes = {
   "/demos/cafe/services": "demos/cafe-services.html",
   "/demos/cafe/about": "demos/cafe-about.html",
   "/demos/cafe/gallery": "demos/cafe-gallery.html",
-  "/demos/cafe/contact": "demos/cafe-contact.html"
+  "/demos/cafe/contact": "demos/cafe-contact.html",
+  "/demos/salon": "demos/salon.html",
+  "/demos/salon/services": "demos/salon-services.html",
+  "/demos/salon/about": "demos/salon-about.html",
+  "/demos/salon/gallery": "demos/salon-gallery.html",
+  "/demos/salon/contact": "demos/salon-contact.html",
+  "/demos/contractor": "demos/contractor.html",
+  "/demos/contractor/services": "demos/contractor-services.html",
+  "/demos/contractor/about": "demos/contractor-about.html",
+  "/demos/contractor/gallery": "demos/contractor-gallery.html",
+  "/demos/contractor/contact": "demos/contractor-contact.html",
+  "/demos/lodge": "demos/lodge.html",
+  "/demos/lodge/services": "demos/lodge-services.html",
+  "/demos/lodge/about": "demos/lodge-about.html",
+  "/demos/lodge/gallery": "demos/lodge-gallery.html",
+  "/demos/lodge/contact": "demos/lodge-contact.html",
+  "/demos/retail": "demos/retail.html",
+  "/demos/retail/services": "demos/retail-services.html",
+  "/demos/retail/about": "demos/retail-about.html",
+  "/demos/retail/gallery": "demos/retail-gallery.html",
+  "/demos/retail/contact": "demos/retail-contact.html"
 };
 const nextConfig = {
   reactStrictMode: true,
